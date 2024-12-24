@@ -11,7 +11,7 @@ import torch
 import torch.nn as nn
 
 from collections import OrderedDict
-from layers import *
+from monodepth2.layers import ConvBlock, Conv3x3, upsample
 
 
 class DepthDecoder(nn.Module):

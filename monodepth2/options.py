@@ -25,7 +25,15 @@ class MonodepthOptions:
                                  type=str,
                                  help="log directory",
                                  default=os.path.join(os.path.expanduser("~"), "tmp"))
-
+        # SNN options
+        self.parser.add_argument("--t",
+                                 type=int,
+                                 help="time window",
+                                 default=2)
+        self.parser.add_argument("--d",
+                                 type=int,
+                                 help="quantization bit",
+                                 default=4)
         # TRAINING options
         self.parser.add_argument("--model_name",
                                  type=str,

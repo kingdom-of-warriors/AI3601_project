@@ -5,11 +5,9 @@ import numpy as np
 # Model for RM-ResNet
 
 thresh = 0.5  # neuronal threshold
-lens = 0.5  # hyper-parameters of approximate function
 decay = 0.25  # decay constants
 num_classes = 1000
 time_window = 2
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
 # membrane potential update
