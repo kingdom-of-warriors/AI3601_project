@@ -1,2 +1,13 @@
 logs/
 data/
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 模型权重和数据集
+*.pth
+*.pt
+*.bin
+models/
